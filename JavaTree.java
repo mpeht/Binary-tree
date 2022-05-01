@@ -177,10 +177,10 @@ public class JavaTree {
     }
 
     public void postOrder(Node actual) {
-        if (actual != null) {
-            postOrder(actual.left);
-            postOrder(actual.right);
+      if (actual != null) {
+            inOrder(actual.left);
             System.out.print(actual.value + " ");
+            inOrder(actual.right);
         }
     }
 
