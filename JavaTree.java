@@ -45,7 +45,7 @@ public class JavaTree {
                         return;
                     }
                 } 
-                else { // ir para direita
+                else {
                     actual = actual.left;
                     if (actual == null) {
                         previous.left = newNode;
